@@ -1,5 +1,5 @@
 class Coordinates
-	def midpoint(x_one,y_one,x_two,y_two)
+	def self.midpoint(x_one,y_one,x_two,y_two)
 		@x_one = x_one
 		@y_one = y_one
 		@x_two = x_two
@@ -9,7 +9,7 @@ class Coordinates
 		puts "#{@x}, #{@y}"
 	end
 
-	def distance(x_one,y_one,x_two,y_two)
+	def self.distance(x_one,y_one,x_two,y_two)
 		@x_one = x_one
 		@y_one = y_one
 		@x_two = x_two
@@ -17,7 +17,7 @@ class Coordinates
 		@distance = RightTriangle.new.hypotenuse((@x_two - @x_one),(@y_two - @y_one))
 	end
 
-	def distance_z(x_one, y_one, z_one, x_two, y_two, z_two)
+	def self.distance_z(x_one, y_one, z_one, x_two, y_two, z_two)
 		@x_one = x_one
 		@y_one = y_one
 		@z_one = z_one

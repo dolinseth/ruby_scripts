@@ -9,8 +9,9 @@ class Exponent
 				@power -= 1
 				@y *= @x
 			end
-			puts "1"
-			puts "-" * (@y.to_s.split("").count)
+			@y_counter = (@y.to_s.split("").count)
+			puts " " * (@y_counter / 2) + "1"
+			puts "-" * @y_counter
 			puts "#{@y}"
 		elsif @power == 0
 			@y = 1
