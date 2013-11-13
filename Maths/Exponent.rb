@@ -56,7 +56,7 @@ class Exponent
 			@power -= 1
 			@extra_power += 1
 			@y = @y * @x
-			if @extra_power == 1000
+			if @extra_power == 100000
 				@extra_power = 0
 				puts "#{@y}"
 			end

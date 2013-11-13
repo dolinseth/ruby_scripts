@@ -9,6 +9,19 @@ class Coordinates
 		puts "#{@x}, #{@y}"
 	end
 
+	def self.midpoint_z(x_one, y_one, z_one, x_two, y_two, z_two)
+		@x_one = x_one
+		@y_one = y_one
+		@z_one = z_one
+		@x_two = x_two
+		@y_two = y_two
+		@z_two = z_two
+		@x = ((@x_one + @x_two) / 2)
+		@y = ((@y_one + @y_two) / 2)
+		@z = ((@y_one + @y_two) / 2)
+		puts "#{@x}, #{@y}"
+	end
+
 	def self.distance(x_one,y_one,x_two,y_two)
 		@x_one = x_one
 		@y_one = y_one
@@ -31,8 +44,8 @@ class Coordinates
 	end
 
 	def self.help
-		puts "midpoint"
-		puts "distance"
-		puts "distance_z"
+		puts "midpoint(x_one,y_one,x_two,y_two)"
+		puts "distance(x_one,y_one,x_two,y_two)"
+		puts "distance_z(x_one, y_one, z_one, x_two, y_two, z_two)"
 	end
 end

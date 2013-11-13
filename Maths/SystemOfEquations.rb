@@ -71,9 +71,9 @@ class SystemOfEquations
 				@integer_two *= @divider
 				@y_coef = @y_coef_one + @y_coef_two
 				@integer = @integer_one + @integer_two
-				@y = @integer / @y_coef
+				@x = @integer / @x_coef
 
-				@x = @integer_one + @y
+				@y = @integer_one + @x
 				puts "#{@x},#{@y}"
 			end
 		else
